@@ -32,23 +32,16 @@
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
   <script type="systemjs-importmap">
-    {
-      "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.4/lib/system/single-spa.min.js",
-        "vue": "https://cdn.jsdelivr.net/npm/vue@3.2.37/dist/vue.global.min.js",
-        "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@4.0.16/dist/vue-router.global.min.js",
-        "element-plus": "https://cdn.jsdelivr.net/npm/element-plus@2.2.5/dist/index.full.min.js"
-      },
-      "scopes": {
-        "@prototype/app2": {
-          "vue": "https://cdn.jsdelivr.net/npm/vue@3.2.37/dist/vue.global.min.js",
-          "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@4.0.16/dist/vue-router.global.min.js"
+        {
+        "imports": {
+          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.4/lib/system/single-spa.min.js",
+          "vue": "https://cdn.jsdelivr.net/npm/vue@3.2.37/dist/vue.global.js",
+          "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@4.0.16/dist/vue-router.global.js"
         }
       }
-    }
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@3.0.3/dist/vue.global.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue-router@4.0.0-rc.5/dist/vue-router.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.37/dist/vue.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-router@4.0.16/dist/vue-router.global.min.js"></script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
   <!-- Add your organization's prod import map URL to this script's src  -->
